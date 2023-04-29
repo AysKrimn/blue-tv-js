@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue-TV Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- SPLİDE JS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <style>
+
+        .splide__slide img {
+
+            height: 380px !important;
+        }
+
+       #showPassword {
+        align-self: center;
+        position: relative;
+        left: -7%;
+        color: black;
+        cursor: pointer;
+        font-size: 13px;
+       }
+    </style>
+</head>
+<body>
+    
+
+
+    <nav class="nav">
+   
+        <a href="#">
+
+            <img src="./assets/logo.jpg" alt="logo">
+        </a>
+      
+
+        <div class="right-list">
+            <a href="#">Giriş Yap</a>
+        </div>
+
+    </nav>
+
+    <div class="generic">
+
+        <div class="row">
+
+            <div class="col-lg-2">
+
+                <div style="display: flex; align-items: center;">
+
+                    <p>
+                        Yıllık Üyeliklerde
+                        İlk 7 Gün Ücretsiz Deneme
+                    </p>
+
+                </div>
+          
+            </div>
+
+
+            <div class="col-lg-10">
+
+                <form action="">
+
+                    <div class="input-container">
+
+                    <div class="flex-wrap">
+                 
+                    <div class="input-inner-container">
+
+                    
+                    <input type="text" class="form-control" placeholder="Ad Soyad">
+                    <input type="email" class="form-control" placeholder="E-posta Adresiniz" id="e-mail">
+                    <input type="password" class="form-control" placeholder="Parola" id="sifre">
+                    <span id="showPassword">IKON</span>
+                    <button class="no-border form-control">Ücretsiz Dene</button>
+
+                    </div>
+          
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          
+                    </div>
+          
+                    <div class="flex-last">
+
+                        <span>ya da</span>
+
+                        <div class="icons">
+    
+                            <a href="">İKON 1</a>
+                            <a href="">İKON 1</a>
+                            <a href="">İKON 1</a>
+    
+                        </div>
+
+                    </div>
+          
+             
+                   
+                     </div>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- site içerik -->
+
+    <div class="container-fluid" id="site-content">
+
+
+        <div class="banner text-light">
+
+            <div class="box-title">
+
+                <h1>Türkiye'nin İnternet Televizyonu</h1>
+                <p>Yerli ve yabancı 10.000 saatten fazla içerik yıllık üyeliklere özel ayda sadece ₺39.9</p>
+
+                <span style="color:gray">*Yıllık aboneliklerde</span>
+
+                
+                <div class="terminate">
+                
+                    <span>İstediğin zaman iptal et.</span>
+                    <br>
+                    <button>Ücretsiz Dene</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="original mt-5">
+
+            <p class="text-center text-light">Blue Tv Özel Yapımlar</p>
+
+            <!-- carousel start -->
+            <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                    <ul class="splide__list">
+                        
+                        <li class="splide__slide">
+
+                            <img src="./uploads/batman.webp" alt="batman">
+
+                        </li>
+                        <li class="splide__slide">
+
+                            <img src="./uploads/hitman.webp" alt="hitman">
+                        </li>
+
+                        <li class="splide__slide">
+
+                            <img src="./uploads/madmax.jpg" alt="madmax">
+                        </li>
+
+                            <li class="splide__slide">
+
+                            <img src="./uploads/spiderman.webp" alt="spiderman">
+
+                        </li>
+
+                        <li class="splide__slide">
+
+                            <img src="./uploads/venom.webp" alt="venom">
+
+                        </li>
+
+
+                    </ul>
+            </div>
+
+            </section>
+           
+            <!-- carousel ends -->
+
+        </div>
+
+
+        <p class="text-center text-light">Dilediğin zaman dilediğin yerden izle</p>
+
+        <div class="movie-banner">
+            <img src="./assets/boru-bozkir.webp" alt="banner">
+        </div>
+
+
+        <div class="helper-text mt-5">
+
+            <ul>
+
+                <li>
+                    <p>10.000 saatten fazla film, dizi ve daha fazlası.</p>
+                </li>
+
+
+                <li>
+                    <p>Dizüstü ve masaüstü tüm bilgisayarlarda</p>
+                </li>
+
+
+                <li>
+                    <p>Akıllı televizyonlarda ve Apple TV’de</p>
+                </li>
+
+
+                <li>
+                    <p>Tüm telefon ve tabletlerde, dilediğin içeriği indir & izle!</p>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+        <p class="text-center text-light">En Sevilen Canlı Yayın Kanalları</p>
+
+        <div class="flex-container" id="live_channels_container">
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/5dc2be53866ac331e0feb20e" alt="star">
+            </div>
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/5dcd4eec866ac302bcb1c34b" alt="show">
+            </div>
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/5dc2bd27866ac331e0feb1fe" alt="fox">
+            </div>
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/5c3f5cf2866ac306fce2c061" alt="trt">
+            </div>
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/5c3f5b69866ac306fce2c029" alt="k7">
+            </div>
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/63fddc62866ac31b149aa274" alt="trt2">
+            </div>
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/63fddc22866ac31b782685c8" alt="36">
+            </div>
+
+            <div class="flex-item">
+
+                <img src="https://blutv-images.mncdn.com/q/t/i/bluv2/75/70x70/6295d4b4866ac31658881736" alt="bluetv">
+            </div>
+
+        </div>
+
+        <p id="show_more" class="text-center text-light"> Daha Fazla Göster <span class="down"></span> </p>
+
+
+        <div class="mt-5">
+
+            <div class="row">
+
+                <div class="col-lg-6" id="banner_two"> </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="text-light blue-tv-detail">
+
+                        <p>BluTV yıllık aboneliklerde ayda sadece ₺39.</p>
+
+                        <p>10.000 saatten fazla film, dizi ve daha fazlası. Tek tuşla iptal edebilme kolaylığı.</p>
+
+                        <p>Blutv Özel Yapım Diziler ve Programlar</p>
+
+                        <p>Yerli ve Yabancı En Çok Sevilen Dizi ve Filmler</p>
+
+                        <p>Altyazı & Dublaj ve HD kalitesiyle</p>
+
+
+                        <div class="mt-5">
+                            <button>Yıllık üyelikle, 7 gün ücretsiz dene</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+        <p class="text-center text-light">BluTV'nin En Sevilenleri</p>
+
+        <div>
+            <!-- carousel -->
+        </div>
+
+
+        <p class="text-center text-light">BluTV'de Daha Fazlasını Keşfet</p>
+
+
+        <div class="discovery-container">
+
+         <a class="discovery-a" href="#">
+            Filmler
+         </a>
+        
+
+         <a class="discovery-a" href="#">
+            Diziler
+         </a>
+
+         <a class="discovery-a" href="#">
+            Canlı TV
+         </a>
+
+         <a class="discovery-a" href="#">
+            Discovery+
+         </a>
+
+         <a class="discovery-a" href="#">
+            Çocuk
+         </a>
+
+         <a class="discovery-a" href="#">
+            Belgeseller
+         </a>
+        
+        </div>
+
+
+        <p class="text-center text-light"> Sıkça Sorulan Sorular</p>
+
+        <div class="mt-5 text-light">
+            <!-- Akordiyon yapı buraya -->
+
+            <div class="container akordiyon">
+
+                <div class="akordiyon-item">
+
+                <div class="akordiyon-container">
+                    <p>Blue TV nedir?</p>
+                    <span class="akordiyon-icon down"></span>
+                </div>
+         
+    
+                <p class="ek-yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum, aliquam architecto, at totam dolor ad exercitationem molestias earum reprehenderit dolorem maxime aperiam laborum blanditiis assumenda possimus saepe vel placeat?</p>
+                
+       
+
+                </div>
+
+                <div class="akordiyon-item">
+
+                    <div class="akordiyon-container">
+                        <p>Blue TV nedir?</p>
+                        <span class="akordiyon-icon down"></span>
+                    </div>
+             
+        
+                    <p class="ek-yazi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum, aliquam architecto, at totam dolor ad exercitationem molestias earum reprehenderit dolorem maxime aperiam laborum blanditiis assumenda possimus saepe vel placeat?</p>
+                    
+           
+    
+                    </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+
+  document.addEventListener( 'DOMContentLoaded', function() {
+
+  
+    new Splide('.splide', {
+        type   : 'slide',
+        perPage: 4,
+        pagination: false,
+    }).mount();
+
+
+ });
+
+
+</script>
+
+
+<script src="./scripts/show_more.js"></script>
+<script src="./scripts/acordion-menu.js"></script>
+<script src="./scripts/inputs.js"></script>
+</body>
+</html>
